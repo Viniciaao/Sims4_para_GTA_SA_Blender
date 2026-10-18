@@ -1,0 +1,34 @@
+name: Validate
+
+on:
+  push:
+    branches: [ main, arena/* ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  core-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run core tests
+        run: |
+          if [ -d tests ]; then
+            pip install pytest
+            pytest -v
+          else
+            echo "Sem tests/ — pulando"
+            python -c "import sims4_sa_converter.core; print('core import OK', sims4_sa_converter.core.VERSION)"
+          fi
+      - name: Validate JSONs
+        run: |
+          python -m json.tool sims4_sa_converter/sa_preset.json > /dev/null && echo "sa_preset.json OK"
+          python -m json.tool sims4_sa_converter/sims4_bone_map.json > /dev/null && echo "sims4_bone_map.json OK"
+      - name: Check ZIP
+        run: |
+          zip -r sims4_sa_converter.zip sims4_sa_converter -x "*.pyc" "*__pycache__*"
+          ls -lh sims4_sa_converter.zip
+          unzip -l sims4_sa_converter.zip

@@ -1,0 +1,12 @@
+title: Sims4 → GTA SA Conversor
+description: Transforme personagens The Sims 4 em peds GTA San Andreas — addon Blender
+theme: jekyll-theme-cayman
+show_downloads: true
+google_analytics:
+
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
