@@ -1,0 +1,5 @@
+*.dff linguist-vendored
+*.txd linguist-vendored
+*.ytd linguist-vendored
+*.ydd linguist-vendored
+sa_preset.json linguist-vendored

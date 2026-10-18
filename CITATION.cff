@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Se usar este projeto, por favor cite-o."
+type: software
+title: "Sims4_para_GTA_SA_Blender"
+version: 1.0.8
+date-released: 2026-10-18
+authors:
+  - name: "Viniciaao"
+    alias: "Viniciaao"
+license: GPL-3.0-or-later
+repository-code: "https://github.com/Viniciaao/Sims4_para_GTA_SA_Blender"
+keywords:
+  - gta-sa
+  - sims4
+  - blender
+  - dff
+  - modding
+  - dragonff
+  - converter
