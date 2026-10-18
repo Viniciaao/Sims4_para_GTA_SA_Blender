@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Viniciaao/Sims4_para_GTA_SA_Blender/releases"><img src="https://img.shields.io/github/v/release/Viniciaao/Sims4_para_GTA_SA_Blender?label=vers%C3%A3o&color=2ea44f&style=for-the-badge" alt="Versão"></a>
+  <a href="https://github.com/Viniciaao/Sims4_para_GTA_SA_Blender/releases"></a>
   <a href="LICENSE"><img src="https://img.shields.io/github/license/Viniciaao/Sims4_para_GTA_SA_Blender?color=informational&style=for-the-badge" alt="Licença GPL-3.0"></a>
   <img src="https://img.shields.io/badge/Blender-4.2--4.5%20LTS-%23F5792A?style=for-the-badge&logo=blender&logoColor=white" alt="Blender 4.2-4.5 LTS">
   <img src="https://img.shields.io/badge/DragonFF-1.1.0-0066cc?style=for-the-badge" alt="DragonFF 1.1.0">
@@ -144,10 +144,6 @@ Pronto! Veja também o [guia passo a passo com imagens](docs/instalacao.md).
 5. **Clique em `Converter DAE -> DFF SA`**
 6. Aguarde a mensagem de sucesso — o DFF e o `.relatorio.json` estarão na pasta escolhida
 
-<p align="center">
-  <img src="assets/images/workflow.jpg" alt="Workflow de conversão" width="720">
-  <br><em>Fluxo completo: DAE Sims 4 → Blender → DFF GTA SA</em>
-</p>
 
 ### Arquivos gerados
 
