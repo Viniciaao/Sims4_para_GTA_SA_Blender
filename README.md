@@ -71,9 +71,9 @@ Anteriormente o addon calculava `bone_world = atomic_world × inverse(inverse_bi
 
 | Versão | Destaque |
 |---|---|
-| **v1.0.8** | Auto-detecção do frame-base do Skin; corrige AbbyS e DAEs com `Z_UP` |
+| **v1.0.8** | Auto-detecção do frame-base do Skin; DAEs com `Z_UP` |
 | **v1.0.7** | Junta meshes em 1 Geometry/Atomic; valida contagem (antes aceitava 2) |
-| **v1.0.6** | Lembrete no painel: `Ajuste recomendado (HFYSTB): -1.060` |
+| **v1.0.6** | Lembrete no painel: `Ajuste recomendado: -1.060` |
 | **v1.0.5** | Slider vertical `−1.5` a `+1.5`; bake mesh→armature; preserva UVs |
 | **v1.0.2** | Atomics separadas (corrigido em v1.0.7); valida orientação |
 
@@ -121,11 +121,11 @@ Verifique que aparece em `Preferences → Add-ons` como **DragonFF**.
 5. No Viewport 3D pressione **N** → aba **Sims 4 -> SA** aparecerá
 
 <p align="center">
-  <img src="assets/images/painel.jpg" alt="Painel do addon no Blender" width="680">
-  <br><em>Painel Sims 4 → SA no Blender (N → Sims 4 -> SA)</em>
+  <img src="/assets/images/Tela%20Inteira%2Bmenu.jpg" alt="Painel do addon no Blender" width="680">
+  <br><em>Painel com um Sim já importado e convetido</em>
 </p>
 
-Pronto! Veja também o [guia passo a passo com imagens](docs/instalacao.md).
+Pronto!
 
 ---
 
@@ -135,7 +135,7 @@ Pronto! Veja também o [guia passo a passo com imagens](docs/instalacao.md).
 
 1. **Abra o painel:** Viewport 3D → pressione **N** → aba **Sims 4 -> SA**
 2. **DAE de entrada:** clique na pasta e selecione seu `.dae` (ex: `MeuPersonagem.dae`)
-3. **DFF de saída:** escolha pasta/nome. Se deixar vazio, cria `MeuPersonagem_SA.dff` ao lado do DAE
+3. **DFF de saída:** escolha pasta/nome. Se deixar vazio, provalvel que dará erro(Lembre de colocar ".dff" na extensão do arquivo. `pasta\pasta\MeuPersonagem_SA.dff`
 4. **Opções:**
    - ✅ **Ajustar membros para pose-base SA** — deixe marcado na primeira tentativa
    - **Ajuste vertical do ped:** `0.000` para testes iniciais (veja [Ajuste Vertical](#-ajuste-vertical))
@@ -148,20 +148,11 @@ Pronto! Veja também o [guia passo a passo com imagens](docs/instalacao.md).
 ### Arquivos gerados
 
 ```
-MeuPersonagem_SA.dff            ← modelo para o jogo (coloque em ModLoader)
+MeuPersonagem_SA.dff            ← modelo para o jogo
 MeuPersonagem_SA.relatorio.json  ← relatório técnico da conversão
 ```
 
 Se a validação falhar, um `*_intermediario_debug.dff` é salvo para diagnóstico — **não use no jogo**, é apenas para reportar bug.
-
-### Próximos passos no GTA SA
-
-1. O DFF contém **geometria + skeleton** — você ainda precisa de um **TXD** com texturas
-2. Extraia as imagens do DAE (ex: `*_diffuse.png`) e crie o TXD com **TXD Workshop** ou **Magic TXD**
-3. Instale via **ModLoader**: `GTA SA/ModLoader/MeuPed/meu_ped.dff` + `meu_ped.txd` + `peds.ide`
-4. Teste no jogo: **parado, andar/correr, mira, mãos, joelhos, pés no chão**
-
-> 💡 **Dica:** Teste primeiro sem texturas (DFF branco) para confirmar que o skeleton não está quebrado. Depois adicione o TXD.
 
 ---
 
@@ -321,8 +312,7 @@ Contribuições são bem-vindas! Veja [CONTRIBUTING.md](CONTRIBUTING.md).
 - [Blender LTS](https://www.blender.org/download/lts/) • [DragonFF](https://extensions.blender.org/add-ons/dragonff/) • [TXD Workshop](https://www.gtagarage.com/mods/show.php?id=8320)
 
 <p align="center">
-  <b>Feito com ❤️ para a comunidade GTA SA modding</b><br>
-  Se este addon te ajudou, deixe uma ⭐ no repositório!
+  <b>Feito com por IA, com verificação manual</b><br>
 </p>
 
 ---
