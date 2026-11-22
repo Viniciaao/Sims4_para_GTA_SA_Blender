@@ -87,7 +87,7 @@ Veja o [CHANGELOG completo](CHANGELOG.md) com todos os detalhes técnicos.
 |---|---|---|
 | **Blender** | **4.2 – 4.5 LTS** | [blender.org/download](https://www.blender.org/download/) |
 | **DragonFF** | **1.1.0** | [extensions.blender.org/add-ons/dragonff](https://extensions.blender.org/add-ons/dragonff/) |
-| **DAE** | COLLADA com 1 armature + meshes skinned + vertex groups | Exportado do Sims 4 Studio / Blender |
+| **DAE** | COLLADA com 1 armature + meshes skinned + vertex groups | Exportado do [TS4SimRipper](https://github.com/CmarNYC-Tools/TS4SimRipper/releases) |
 
 > ⚠️ **Blender 5.0+ NÃO serve** — o importer COLLADA foi removido. Use 4.2 ou 4.5 LTS.
 > 
@@ -114,7 +114,7 @@ Verifique que aparece em `Preferences → Add-ons` como **DragonFF**.
 
 ### 2) Instale este addon
 
-1. Baixe o ZIP da última release: [**Sims4_para_GTA_SA_Blender_Addon_v1.0.8.zip**](https://github.com/Viniciaao/Sims4_para_GTA_SA_Blender/releases/latest)
+1. Baixe o ZIP da última release: [**Aqui**](https://github.com/Viniciaao/Sims4_para_GTA_SA_Blender/releases/latest)
 2. No Blender: `Edit → Preferences → Add-ons → Install from Disk…` (ou `Get Extensions → Install from Disk…`)
 3. Selecione o ZIP → clique em **Install**
 4. Ative **The Sims 4 -> GTA SA DFF Converter** (marque a caixinha)
