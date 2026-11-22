@@ -10,7 +10,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
 ### Corrigido
 - **Detecção automática do frame-base do Skin PLG.** O core agora testa todos os frames candidatos contra as matrizes `inverse_bind` e escolhe o único frame que reconcilia todos os binds abaixo do limite `0.002`. Antes, assumia sempre o frame do Atomic (`b__ROOT__`), o que contava a transformação do Root duas vezes quando o Atomic estava anexado a um osso mas os binds estavam no espaço do frame `rig` (caso `AbbyS.dae`).
-- Erro de bind em `AbbyS.dae`: `0.0211164` → `4.8427e-07` ✅
+- Erro de bind em um .dae: `0.0211164` → `4.8427e-07` ✅
 - Transformação de vértices agora usa o frame-base inferido, não o Atomic.
 
 ### Verificado
@@ -60,7 +60,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 ## [1.0.4] - 2026-10-18
 
 ### Corrigido
-- Calibração de pivô Akane102 — ajuste fino de posição na hierarquia
+- Calibração de pivô — ajuste fino de posição na hierarquia
 
 ---
 
